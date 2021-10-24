@@ -1,63 +1,111 @@
-body{
-    background: url(https://static.pexels.com/photos/36372/pexels-photo.jpg);
-    background-size: cover;
-    background-position: center;
-    font-family: nunito,sans-serif;
-}
-html{
-    height: 100%;
+body {
+  background: url(https://static.pexels.com/photos/36372/pexels-photo.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
 }
 
-#content{
-    text-align: center;
-    padding-top: 20%;
-    color: white;
+html {
+  min-height: 100%;
 }
 
-.navbar-default .navbar-nav>li>a {
-    color: black;
-    font-size: 1.1em;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-.navbar-default .navbar-brand {
-    color: black;
-    font-size: 1.7em;
+.container {
+  margin: 0 50px;
+  padding: 0 20px;
 }
 
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-    color: black;
-    background-color: #DBDBDB;
+.navbar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 1.3rem;
+  font-weight: 600;
 }
 
-.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-    background-color: rgba(0, 0, 0, 0.0);
+.navbar-header li {
+  list-style: none;
 }
 
-.navbar-default .navbar-toggle {
-    border: none;
+.navbar-header a {
+  padding: 20px;
+  transition: all 500ms;
 }
 
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: black;
-}
-.nav-style{
-    border-radius: 0px;
-    border: none;
-    color: black;
-    background: rgba(0, 0, 0, 0);
+.navbar-nav {
+  font-weight: 400;
+  font-size: 1.1rem;
 }
 
-hr{
-    width: 60%;
+.navbar-nav a:hover {
+  text-decoration: overline;
 }
-h1{
+
+.navbar-header ul {
+  display: flex;
+}
+
+.paw {
+  height: 25px;
+  width: 25px;
+  animation: spin 2s infinite linear;
+}
+
+@keyframes spin
+{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.content {
+  text-align: center;
+  padding-top: 15%;
+  color: white;
+}
+.content img{
+    height: 60px;
+    width: 60px;
+    filter: invert();
+}
+
+hr {
+  width: 60%;
+}
+h1 {
+  font-weight: 700;
+  font-size: 55px;
+  text-shadow: rgb(0, 0, 0) 0px 0px 9px, rgb(54, 54, 54) 2px 1px 18px;
+}
+h3 {
+  color: rgba(255, 255, 255, 1);
+  text-shadow: rgb(0, 0, 0) 0px 0px 9px, rgb(54, 54, 54) 2px 1px 18px;
+}
+
+button {
+    text-transform: uppercase;
+    background: #4CAF50;
+    width: 35%;
+    border: 0;
+    border-radius: 5px;
+    letter-spacing: 2px;
     font-weight: 700;
-    font-size: 55px;
-    text-shadow: rgb(0, 0, 0) 0px 0px 9px,
-                 rgb(54, 54, 54) 2px 1px 18px;
+    padding: 15px;
+    color: white;
+    font-size: 14px;
+    transition: all 300ms ;
+    cursor: pointer;
+    font-family: "Nunito";
 }
-h3{
-    color: rgba( 255, 255, 255, 1);
-    text-shadow: rgb(0, 0, 0) 0px 0px 9px,
-                 rgb(54, 54, 54) 2px 1px 18px;
+
+button:hover{
+    background-color: #43A047;
 }
